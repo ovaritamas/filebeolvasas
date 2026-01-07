@@ -16,8 +16,18 @@ for programnyelv in programnyelvek:
 legf_nyelv_eve = programnyelvek[0]["year"]
 legf_nyelv = programnyelvek[0]
 for programnyelv in programnyelvek:
-    if programnyelv["year"] < legf_nyelv_eve:
-        legf_auto_eve = programnyelv["year"]
+    if programnyelv["year"] > legf_nyelv_eve:
+        legf_nyelv_eve = programnyelv["year"]
         legf_nyelv = programnyelv
 
 print(f"A legfiatalabb programnyelv: {legf_nyelv}")
+
+"""Legidősebb nyelv"""
+legid_nyelv_eve = programnyelvek[0]["year"]
+legid_nyelv = programnyelvek[0]
+for programnyelv in programnyelvek:
+    if programnyelv["year"] < legid_nyelv_eve:
+        legid_nyelv_eve = programnyelv["year"]
+        legid_nyelv = programnyelv
+
+print(f"A legidősebb programnyelv: {legid_nyelv}")
