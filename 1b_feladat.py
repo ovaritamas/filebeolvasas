@@ -10,6 +10,8 @@ with open('adatok\Timeline_of_ programming_languages.csv', 'r', encoding='utf-8'
         last_name = adatok[3]
         programnyelvek.append([year, programming_language, first_name, last_name])
 
+print(programnyelvek)
+
 """Legfiatalabb nyelv"""
 legf_nyelv_eve = programnyelvek[0][0]
 legf_nyelv = programnyelvek[0]
